@@ -18,7 +18,7 @@ HerokuTest::Application.configure do
   config.action_mailer.smtp_settings = {
     address: "smtp.gmail.com",
     port: 587,
-    user_name: "sasaporta@gmail.com",
+    user_name: ENV['SMTP_USER'],
     password: ENV['SMTP_PASSWORD'],
     authentication: "plain",
     enable_starttls_auto: true
