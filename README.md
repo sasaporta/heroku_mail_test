@@ -10,3 +10,5 @@ SMTP_PASSWORD is your Gmail password
 RECIPIENT is the address where you want to send the email (e.g. someone@example.com)
 
 When you visit the page /test, it will attempt to send the email.
+
+TIP: To set an environment variable on a Linux machine, use the export command (e.g. export SMTP_USER=me@gmail.com. To set it on Heroku, use something like heroku config:add SMTP_USER=me@gmail.com.
